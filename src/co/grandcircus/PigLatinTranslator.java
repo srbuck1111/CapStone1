@@ -65,14 +65,14 @@ public class PigLatinTranslator {
 		scan.close();
 
 	}
-	
+
 	public static boolean isOnlyLetter(String word) {
 		
 		for (int i = 0; i < word.length(); i++) {
 			
 			char letter = word.charAt(i);
 			
-			if (!Character.isLetter(letter)) {
+			if (!Character.isLetter(letter) & letter != '\'') {
 				
 				return false;
 				
